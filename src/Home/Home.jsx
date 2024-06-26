@@ -20,6 +20,8 @@ import baikal from "./images/Baikal.png"
 import cafe from "./images/Cafe.png"
 import cafena from "./images/Eshik.png"
 import oyna from "./images/Scoot.png"
+import ya from "./images/shoha.png"
+
 
 const Home = () => {
   const [open, setOpen] = React.useState(false);
@@ -56,7 +58,7 @@ const Home = () => {
             </h1>
           </div>
           <div className='lg:flex md:flex hidden'>
-            <img src={man} alt="" className='h-[60vh] rounded-full lg:flex hidden' />
+            <img src={ya} alt="" className='h-[80vh] rounded-full  lg:flex hidden' />
           </div>
         </div>
 
@@ -81,7 +83,7 @@ const Home = () => {
                 />
               </CardHeader>
               <CardBody className='flex items-center flex-col justify-center'>
-                <Typography color="gray" className="mb-8 font-normal w-96 text-2xl dark:text-black">
+                <Typography color="gray" className="mb-8 font-normal lg:w-96 lg:text-2xl text-sm text-center dark:text-black">
                   {t("aboutme")}
                 </Typography>
               </CardBody>
@@ -101,7 +103,7 @@ const Home = () => {
                 />
               </CardHeader>
               <CardBody className='flex items-center flex-col justify-center'>
-                <Typography color="gray" className="mb-8 font-normal lg:w-[750px] w-[500px] text-2xl dark:text-black">
+                <Typography color="gray" className="mb-8 font-normal lg:w-[750px] text-sm  lg:text-2xl dark:text-black">
                   {t("aboutme")}
                 </Typography>
                 <a href="#" className="inline-block">
@@ -137,9 +139,9 @@ const Home = () => {
             <a href="https://github.com/Uglyman228">
               <FaGithub className='w-14 h-14 hover:scale-[1.1] duration-300' />
             </a>
-            <a href="https://web.telegram.org/k/#@ccy_thy">
+            <Link to="https://t.me/ccy_thy">
               <FaTelegram className='w-14 h-14 hover:scale-[1.1] duration-300' />
-            </a>
+            </Link>
             <a href="https://www.instagram.com/asti.e09/">
               <FaInstagram className='w-14 h-14 hover:scale-[1.1] duration-300' />
             </a>
